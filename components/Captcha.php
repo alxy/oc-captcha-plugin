@@ -11,6 +11,11 @@ class Captcha extends ComponentBase
      */
     public $settings;
 
+    /**
+     * Returns details about this component.
+     * 
+     * @return array
+     */
     public function componentDetails()
     {
         return [
@@ -24,6 +29,9 @@ class Captcha extends ComponentBase
         return [];
     }
 
+    /**
+     * Prepares variables for the widget rendering
+     */
     public function onRun() {
         $this->settings = $this->page['settings'] = Settings::instance();
     }

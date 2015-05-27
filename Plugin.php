@@ -23,6 +23,11 @@ class Plugin extends PluginBase
         ];
     }
 
+    /**
+     * Registers settings for this plugin.
+     * 
+     * @return array
+     */
     public function registerSettings()
     {
         return [
@@ -36,6 +41,11 @@ class Plugin extends PluginBase
         ];
     }
 
+    /**
+     * Registers components for this plugin.
+     * 
+     * @return array
+     */
     public function registerComponents()
     {
         return [

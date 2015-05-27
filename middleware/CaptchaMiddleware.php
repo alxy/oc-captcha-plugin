@@ -29,6 +29,9 @@ class CaptchaMiddleware {
                 $request->ip()
             );
 
+            /**
+             * Fail, if the response isn't OK
+             */
             if (! $response->isSuccess()) {
                 if ($request->ajax()) {
                     throw new AjaxException( $response->getErrorCodes() );
@@ -42,6 +45,9 @@ class CaptchaMiddleware {
             }
         }
 
+        /**
+         * Handle request
+         */
         return $next($request);
     }
 
