@@ -19,7 +19,7 @@ In the OctoberCMS backend go to `Settings > Updates > Install plugins`, search f
 
 You may alternatively use the command line and enter
 ```
-$ php artisan plugin:install Krisawzm.Embed
+$ php artisan plugin:install Alxy.Captcha
 ```
 to install the plugin.
 
