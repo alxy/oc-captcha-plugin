@@ -1,0 +1,79 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    hint:
+        type: hint
+        path: $/alxy/captcha/models/settings/_hint.htm
+    site_key:
+        span: auto
+        label: Site key
+        comment: The site key is used to display the widget on your site.
+    secret_key:
+        span: auto
+        label: Secret key
+        comment: The secret authorizes communication between your application backend and the reCAPTCHA server to verify the user's response.
+    lang:
+        span: auto
+        label: Language
+        type: dropdown
+        comment: Forces the widget to render in a specific language. Auto-detects the user's language if unspecified.
+        options:
+            '': Auto-detect
+            ar: Arabic
+            bn: Bengali
+            bg: Bulgarian
+            ca: Catalan
+            zh-CN: Chinese (Simplified)
+            zh-TW: Chinese (Traditional)
+            hr: Croatian
+            cs: Czech
+            da: Danish
+            nl: Dutch
+            en-GB: English (UK)
+            en: English (US)
+            et: Estonian
+            fil: Filipino
+            fi: Finnish
+            fr: French
+            fr-CA: French (Canadian)
+            de: German
+            gu: Gujarati
+            de-AT: German (Austria)
+            de-CH: German (Switzerland)
+            el: Greek
+            iw: Hebrew
+            hi: Hindi
+            hu: Hungarain
+            id: Indonesian
+            it: Italian
+            ja: Japanese
+            kn: Kannada
+            ko: Korean
+            lv: Latvian
+            lt: Lithuanian
+            ms: Malay
+            ml: Malayalam
+            mr: Marathi
+            no: Norwegian
+            fa: Persian
+            pl: Polish
+            pt: Portuguese
+            pt-BR: Portuguese (Brazil)
+            pt-PT: Portuguese (Portugal)
+            ro: Romanian
+            ru: Russian
+            sr: Serbian
+            sk: Slovak
+            sl: Slovenian
+            es: Spanish
+            es-419: Spanish (Latin America)
+            sv: Swedish
+            ta: Tamil
+            te: Telugu
+            th: Thai
+            tr: Turkish
+            uk: Ukrainian
+            ur: Urdu
+            vi: Vietnamese
