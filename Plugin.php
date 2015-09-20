@@ -16,34 +16,35 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Captcha',
+            'name' => 'Captcha',
             'description' => 'Integrates Googles reCAPTCHA into October.',
-            'author'      => 'Alxy',
-            'icon'        => 'icon-key'
+            'author' => 'Alxy',
+            'icon' => 'icon-key'
         ];
     }
 
     /**
      * Registers settings for this plugin.
-     * 
+     *
      * @return array
      */
     public function registerSettings()
     {
         return [
             'settings' => [
-                'label'       => 'Captcha Settings',
+                'label' => 'Captcha Settings',
                 'description' => 'Manage reCAPTCHA API keys and settings.',
-                'icon'        => 'icon-key',
-                'class'       => 'Alxy\Captcha\Models\Settings',
-                'keywords'    => 'captcha reCAPTCHA google security form'
+                'icon' => 'icon-key',
+                'class' => 'Alxy\Captcha\Models\Settings',
+                'keywords' => 'captcha reCAPTCHA google security form',
+                'permissions' => ['alxy.captcha.access_settings'],
             ]
         ];
     }
 
     /**
      * Registers components for this plugin.
-     * 
+     *
      * @return array
      */
     public function registerComponents()
@@ -53,4 +54,15 @@ class Plugin extends PluginBase
         ];
     }
 
+    /**
+     * Registers administrator permissions for this plugin
+     *
+     * @return array
+     */
+    public function registerPermissions()
+    {
+        return [
+            'alxy.captcha.access_settings' => ['tab' => 'Captcha', 'label' => 'Access Settings']
+        ];
+    }
 }
