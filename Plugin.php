@@ -62,7 +62,7 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'alxy.captcha.access_settings' => ['tab' => 'Support', 'label' => 'Access Settings']
+            'alxy.captcha.access_settings' => ['tab' => 'Captcha', 'label' => 'Access Settings']
         ];
     }
 }
