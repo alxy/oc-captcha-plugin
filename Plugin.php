@@ -62,7 +62,7 @@ class Plugin extends PluginBase
     public function registerPageSnippets()
     {
         return [
-           'Uniacid\Captcha\Components\Captcha' => 'captcha'
+           'Alxy\Captcha\Components\Captcha' => 'captcha'
         ];
     }
 
