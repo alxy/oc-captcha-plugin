@@ -1,3 +1,6 @@
-1.0.1: First version of Captcha
+1.0.1:
+    - First version of Captcha
 1.0.2:
     - Added setting permissions by @drtzack
+1.0.3:
+    - Register Snippet for Rainlab.Pages support
