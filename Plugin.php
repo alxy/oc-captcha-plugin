@@ -55,6 +55,18 @@ class Plugin extends PluginBase
     }
 
     /**
+     * Registers component as a snippet to be used in Static Pages.
+     * 
+     * @return array
+     */
+    public function registerPageSnippets()
+    {
+        return [
+           'Alxy\Captcha\Components\Captcha' => 'captcha'
+        ];
+    }
+
+    /**
      * Registers administrator permissions for this plugin
      *
      * @return array
